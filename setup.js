@@ -112,8 +112,8 @@ function initCrossfilter() {
         });
     val1Grouping = val1Dimension.group(
         function(v) {
-            // return Math.floor(v/3)*3;
-            return v;
+            return Math.floor(v);
+            // return v;
         });
 
     val2Dimension = filter.dimension(

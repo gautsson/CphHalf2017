@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kaupmannahafnarmaraþon 2017</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="lib/d3.js"></script>
+  <script src="lib/crossfilter.js"></script>
+  <script src="chart.js"></script>
+  <script src="full_data.js"></script>
+  <script src="setup.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', init, false);
+  </script>
+</head>
+
+<body>
+  <h1>Kaupmannahafnarhálfmaraþon, 17. september 2017</h1>
+  <p>01:52:53. Þann 17. september 2017 setti ég nýtt persónulegt met í hálfmaraþonhlaupi í Kaupmannahöfn. Hlaupið var öðruvísi
+    en nokkuð annað hlaup sem ég hef tekið þátt í — þegar ég átti 5 kílómetra eftir í mark skall á þrumuveður með eldingum,
+    hagléli, úrhellisrigningu og áður en fyrr varði flæddi um allar götur og á sumum stöðum var vatnið í hnjáhæð.</p>
+
+  <p>En það gerði hlaupið bara eftirminnilegra.</p>
+
+  <p>Á þessari síðu má sjá gögn úr Garmin Forerunner 910XT hlaupaúri mínu, sett fram með hjálp D3.js og Crossfilter.</p>
+  <div id="map-div"></div>
+
+  <div id="charts">
+
+    <h3>Tempó — fjöldi mínútna fyrir hvern kílómeter</h3>
+    <div id="val-chart" class="chart">
+      <div class="title"></div>
+    </div>
+    <br>
+    <h3>Hjartsláttur — slög hverja mínútu<g></g></h3>
+    <div id="val2-chart" class="chart">
+      <div class="title"></div>
+    </div>
+    <br>
+    <h3>Hæð yfir sjávarmáli í metrum<g></g></h3>
+    <div id="val3-chart" class="chart">
+      <div class="title"></div>
+    </div>
+    <div>
+      <img src="./img/1.jpg" width="450px">
+      <img src="./img/2.jpg" width="450px">
+      <img src="./img/3.jpg" width="450px">
+      <img src="./img/4.jpg" width="450px">
+    </div>
+
+  </div>
+
+</body>
+
+</html>
